@@ -46,7 +46,7 @@ public class JavaQuestionServiceTest {
     @Test
     public void removeTest() {
         int count = questionService.getAll().size();
-        Question question = new Question("q1", "a1");
+        Question question = new Question("q2", "a2");
         Assertions.assertThat(questionService.remove(question))
                 .isEqualTo(question);
     }

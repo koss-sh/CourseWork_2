@@ -14,16 +14,19 @@ public class JavaQuestionService implements QuestionService{
 
     @Override
     public Question add(String question, String answer) {
+        questions.add(new Question(question, answer));
         return add(new Question(question, answer));
     }
 
     @Override
     public Question add(Question question) {
+        questions.add(question);
         return question;
     }
 
     @Override
     public Question remove(Question question) {
+        questions.remove(question);
         return question;
     }
 
